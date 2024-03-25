@@ -1,0 +1,3 @@
+<launch> 
+    <node pkg="data_comm" name="can_comm" type="can_comm" output="screen"/>
+</launch> 

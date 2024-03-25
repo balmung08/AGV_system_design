@@ -1,0 +1,4 @@
+/home/wl/clion-2019.1.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/home/wl/MyCompiler/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc -DCMAKE_CXX_COMPILER=/home/wl/MyCompiler/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ -G "CodeBlocks - Unix Makefiles" /home/wl/CLionProjects/car_8drv_Lite
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/wl/CLionProjects/car_8drv_Lite/cmakes

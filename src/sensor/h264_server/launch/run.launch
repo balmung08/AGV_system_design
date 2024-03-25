@@ -1,0 +1,12 @@
+<launch>
+    <!-- 可见光相机 -->
+    <include file="$(find camera_lbas)/launch/cap_image.launch" />
+
+    <!-- 红外相机 -->
+    <include file="$(find if_camera)/launch/run.launch" />
+
+    <!-- 声音 -->
+    <!-- <node pkg="h264_server" type="rtmp_stream_audio.py" name="rtmp_stream_audio" output="screen">
+        <param name="push_flag" type="bool" value="false" />
+    </node> -->
+</launch>

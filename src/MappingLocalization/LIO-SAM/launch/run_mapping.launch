@@ -1,0 +1,29 @@
+<launch>
+
+    <arg name="project" default="lio_sam"/>
+    
+    <!-- *NIU: 标定请置true -->
+    <param name="iscal" value="false"/>
+
+    <!-- lio_sam -->
+    <include file="$(find lio_sam)/launch/lio_sam.launch" />
+
+    <!--- Run GPS -->
+    <include file="$(find gps)/launch/run_base.launch"/>
+
+    <!--- Run GPS ENU -->
+    <include file="$(find gps_enu)/launch/gps_enu_blue.launch"/>
+
+    <!-- IMU -->
+    <include file="$(find xsens_mti_driver)/launch/xsens_mti_node.launch"/>
+
+    <!-- 启动激光雷达 -->
+    <node pkg="rslidar_sdk" name="rslidar_sdk_node" type="rslidar_sdk_node" output="screen"/>
+
+    <!-- rs 2 velodyne -->
+    <include file="$(find rs_to_velodyne)/launch/run.launch" />
+    
+    <!--- Run Rviz-->
+    <include file="$(find lio_sam)/launch/include/module_rviz.launch" />
+
+</launch>

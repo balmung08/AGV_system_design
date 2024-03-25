@@ -1,0 +1,59 @@
+mqtt:
+  client:
+    protocol: 4 # MQTTv311
+  connection:
+    host: 192.168.3.100 #broker.emqx.io #192.168.3.119 #192.168.119.146 #localhost
+    port: 1883 #9883
+    keepalive: 10 # 表示超过该时间自动掉线,目前掉线后无法恢复,需要人工启动
+  private_path: device/001
+  account:
+    username: agvhirain
+    password: agv123456
+
+serializer: json:dumps #bixu dakai
+deserializer: json:loads #bixu dakai
+
+# agvId: abc123
+# 以下在mqtt的topic自动加入了agvId, 在bridge.py程序中,有wsk编写, 如果功力不足,请勿随便修改
+
+bridge:
+  - factory: mqtt_bridge.bridge:RosToMqttBridge
+    msg_type: mqtt_comm.msg:resp_agvstate
+    topic_from: /resp_agvstate #ros 发布节点
+    topic_to: /agvstate #MQTT 订阅节点  
+
+  - factory: mqtt_bridge.bridge:MqttToRosBridge
+    msg_type: mqtt_comm.msg:mqtt_task
+    topic_from: /mqtt_task #MQTT发布节点  
+    topic_to: /mqtt_task #ros订阅节点
+
+  - factory: mqtt_bridge.bridge:MqttToRosBridge
+    msg_type: mqtt_comm.msg:mqtt_controls
+    topic_from: /mqtt_controls #MQTT发布节点  
+    topic_to: /mqtt_controls #ros订阅节点  
+
+  # - factory: mqtt_bridge.bridge:MqttToRosBridge
+  #   msg_type: mqtt_comm.msg:controls
+  #   topic_from: hirain/yantai/agv/agvctrl/ #MQTT发布节点  +agvId
+  #   topic_to: /controls #ros订阅节点
+
+  # - factory: mqtt_bridge.bridge:MqttToRosBridge #接收其它AGV信息
+  #   msg_type: mqtt_comm.msg:resp_agvstate
+  #   topic_from: hirain/yantai/agv/all_agvinfo
+  #   topic_to: /all_agvinfo #ros订阅节点
+
+  # - factory: mqtt_bridge.bridge:MqttToRosBridge #接收其它AGV信息
+  #   msg_type: nav_msgs.msg:Path
+  #   topic_from: hirain/yantai/agv/taskpath/A0000000000agv001
+  #   topic_to: /all_agv_taskpath/A0000000000agv001 #ros订阅节点
+
+  # - factory: mqtt_bridge.bridge:MqttToRosBridge #接收其它AGV信息
+  #   msg_type: std_msgs.msg:String
+  #   topic_from: mytest
+  #   topic_to: /ros_mytest #ros订阅节点  
+
+  # - factory: mqtt_bridge.bridge:RosToMqttBridge
+  #   msg_type: mqtt_comm.msg:resp_video
+  #   topic_from: /resp_video #ros 发布节点
+  #   topic_to: mytest #MQTT 订阅节点  +agvId
+

@@ -1,0 +1,14 @@
+ <launch>
+    <node pkg="radar" type="ARS_Ladar" name="ARS_Ladar" output="screen">
+        <param name="can_ch" value="3"/>
+        <param name="ROI_longth" value="20"/>
+        <param name="ROI_width" value="5"/>
+        
+        <param name="pub_topic" value="Radar_points"/>
+        <param name="frame_id" value="rslidar"/>
+
+        <param name="init_flag" value="false"/>
+    </node>
+ 
+    <!-- <node pkg="rviz" name="rviz" type="rviz" args="-d $(find radar)/show.rviz"/> -->
+ </launch>

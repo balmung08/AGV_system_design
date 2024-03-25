@@ -1,0 +1,8 @@
+Log file created at: 2024/01/14 11:26:42
+Running on machine: bit-Nuvo-7000-Series
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0114 11:26:42.887876 178184 matching.cpp:87] load global map size:3639561
+I0114 11:26:43.396507 178184 matching.cpp:89] filtered global map size:1210725
+I0114 11:26:43.418584 178184 matching.cpp:111] new local map:-75,75,-75,75,-75,75
+
+I0114 11:26:43.418627 178184 matching.cpp:117] local map size:5477

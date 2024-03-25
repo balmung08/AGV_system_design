@@ -1,0 +1,42 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/bit/xj_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/bit/xj_ws/src/sensor/c200_lidar/include/**",
+        "/home/bit/xj_ws/src/sensor/camera_lbas/include/**",
+        "/home/bit/xj_ws/src/share/common/include/**",
+        "/home/bit/xj_ws/src/sensor/gps/include/**",
+        "/home/bit/xj_ws/src/localization/gps_enu/include/**",
+        "/home/bit/xj_ws/src/perception/ground_segment/include/**",
+        "/home/bit/xj_ws/src/sensor/h264_server/include/**",
+        "/home/bit/xj_ws/src/navigation/planning/help_tool/include/**",
+        "/home/bit/xj_ws/src/sensor/if_camera/include/**",
+        "/home/bit/xj_ws/src/sensor/infrared_fig/include/**",
+        "/home/bit/xj_ws/src/localization/lidar_localization/include/**",
+        "/home/bit/xj_ws/src/localization/LIO-SAM/include/**",
+        "/home/bit/xj_ws/src/localization/myugv/include/**",
+        "/home/bit/xj_ws/src/control/pawcontrol/include/**",
+        "/home/bit/xj_ws/src/navigation/planning/planner/include/**",
+        "/home/bit/xj_ws/src/control/pp_controller/include/**",
+        "/home/bit/xj_ws/src/sensor/radar/include/**",
+        "/home/bit/xj_ws/src/navigation/planning/refpath_planner/include/**",
+        "/home/bit/xj_ws/src/control/traffic_ctr/include/**",
+        "/home/bit/xj_ws/src/navigation/planning/traj_generation/include/**",
+        "/home/bit/xj_ws/src/control/turntable/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

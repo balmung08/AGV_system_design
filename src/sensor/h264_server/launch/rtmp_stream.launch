@@ -1,0 +1,30 @@
+<launch>
+    <!-- 可见光相机 -->
+    <include file="$(find camera_lbas)/launch/cap_image.launch" />
+    <!-- <node pkg="h264_server" type="rtmp_stream_video.py" name="rtmp_stream_rgb" output="screen">
+        <param name="img_topic" value="/cap_image1/lbas_image" type="string" />
+        <param name="camera_type" value="rgb" type="string" />
+        <param name="display" value="0" type="int" />
+        <param name="img_width" value="1280" type="int" />
+        <param name="img_height" value="1024" type="int" />
+        <param name="img_hz" value="30" type="int" />
+        <param name="ip_address" value="rtmp://localhost:1935/live/rgb" type="string" />
+    </node> -->
+
+    <!-- 红外相机 -->
+    <include file="$(find if_camera)/launch/run.launch" />
+    <!-- <node pkg="h264_server" type="rtmp_stream_video.py" name="rtmp_stream_if" output="screen">
+        <param name="img_topic" value="/infrared_image" type="string" />
+        <param name="camera_type" value="if" type="string" />
+        <param name="display" value="0" type="int" />
+        <param name="img_width" value="768" type="int" />
+        <param name="img_height" value="576" type="int" />
+        <param name="img_hz" value="30" type="int" />
+        <param name="ip_address" value="rtmp://localhost:1935/live/infrared" type="string" />
+    </node> -->
+
+    <!-- 声音 -->
+    <!-- <node pkg="h264_server" type="rtmp_stream_audio.py" name="rtmp_stream_audio" output="screen">
+        <param name="push_flag" type="bool" value="false" />
+    </node> -->
+</launch>

@@ -1,0 +1,14 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/ugv/byc4.1_ws/devel/lib/python3/dist-packages",
+        "/home/ugv/bit__b2/devel/lib/python3/dist-packages",
+        "/home/ugv/Liang/autocar_mysim_2401/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/ugv/byc4.1_ws/devel/lib/python3/dist-packages",
+        "/home/ugv/bit__b2/devel/lib/python3/dist-packages",
+        "/home/ugv/Liang/autocar_mysim_2401/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}

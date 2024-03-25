@@ -1,0 +1,12 @@
+ <launch>
+    <node pkg="pathtrack" type="pathtrack" name="pathtrack" output="screen">
+        <param name="test_speed" value="0.2"/>
+        <!-- 右偏为负, 左偏为正-->
+        <param name="angle_offset" value="-0.2"/>
+    </node>
+
+    <node pkg="pathtrack" type="speedlimit" name="speedlimit" output="screen"/>
+
+    <!-- <node pkg="data_comm" name="can_comm" type="can_comm"/> -->
+
+</launch>

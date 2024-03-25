@@ -1,0 +1,57 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/ugv/bit__b2/devel/include/**",
+        "/home/ugv/byc4.1_ws/devel/include/**",
+        "/home/ugv/Liang/autocar_mysim_2401/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/ugv/Liang/autocar_mysim_2401/src/share/amathutils_lib/include/**",
+        "/home/ugv/byc4.1_ws/src/sensor/c200_lidar/include/**",
+        "/home/ugv/byc4.1_ws/src/sensor/camera_lbas/include/**",
+        "/home/ugv/Liang/autocar_mysim_2401/src/sensor/carstate_rec/include/**",
+        "/home/ugv/byc4.1_ws/src/share/common/include/**",
+        "/home/ugv/Liang/autocar_mysim_2401/src/sensor/obs/euclidean_cluster/include/**",
+        "/home/ugv/Liang/autocar_mysim_2401/src/terrain/FAST_LIO/include/**",
+        "/home/ugv/byc4.1_ws/src/sensor/gps/include/**",
+        "/home/ugv/bit__b2/src/MappingLocalization/gps_enu/include/**",
+        "/home/ugv/byc4.1_ws/src/sensor/h264_server/include/**",
+        "/home/ugv/Liang/autocar_mysim_2401/src/planning/lattice_planner/include/**",
+        "/home/ugv/Liang/autocar_mysim_2401/src/sensor/obs/lidar_front_view_image/include/**",
+        "/home/ugv/bit__b2/src/MappingLocalization/lidar_localization/include/**",
+        "/home/ugv/bit__b2/src/MappingLocalization/LIO-SAM/include/**",
+        "/home/ugv/Liang/autocar_mysim_2401/src/obstacles_matching/include/**",
+        "/home/ugv/byc4.1_ws/src/sensor/olelidar/include/**",
+        "/home/ugv/Liang/autocar_mysim_2401/src/sensor/obs/pcl_test/include/**",
+        "/home/ugv/byc4.1_ws/src/sensor/radar/include/**",
+        "/home/ugv/Liang/autocar_mysim_2401/src/share/ros_observer/include/**",
+        "/home/ugv/Liang/autocar_mysim_2401/src/terrain/rough_quant/include/**",
+        "/home/ugv/Liang/autocar_mysim_2401/src/state_record/include/**",
+        "/home/ugv/Liang/autocar_mysim_2401/src/simulation_env/geometry2/tf2/include/**",
+        "/home/ugv/Liang/autocar_mysim_2401/src/simulation_env/geometry2/tf2_bullet/include/**",
+        "/home/ugv/Liang/autocar_mysim_2401/src/simulation_env/geometry2/tf2_eigen/include/**",
+        "/home/ugv/Liang/autocar_mysim_2401/src/simulation_env/geometry2/tf2_geometry_msgs/include/**",
+        "/home/ugv/Liang/autocar_mysim_2401/src/simulation_env/geometry2/tf2_kdl/include/**",
+        "/home/ugv/Liang/autocar_mysim_2401/src/simulation_env/geometry2/tf2_msgs/include/**",
+        "/home/ugv/Liang/autocar_mysim_2401/src/simulation_env/geometry2/tf2_ros/include/**",
+        "/home/ugv/Liang/autocar_mysim_2401/src/simulation_env/geometry2/tf2_sensor_msgs/include/**",
+        "/home/ugv/byc4.1_ws/src/control/turntable/include/**",
+        "/home/ugv/Liang/autocar_mysim_2401/src/control/vehicle_control/include/**",
+        "/home/ugv/Liang/autocar_mysim_2401/src/simulation_env/master/velodyne_gazebo_plugins/include/**",
+        "/home/ugv/Liang/autocar_mysim_2401/src/sensor/obs/vrep2velodyne/include/**",
+        "/home/ugv/byc4.1_ws/src/control/workctr/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

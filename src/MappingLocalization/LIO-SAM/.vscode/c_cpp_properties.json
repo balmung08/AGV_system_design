@@ -1,0 +1,38 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/apple/YSW/slam/LOAM/Workplace/LIO-SAM_ws/devel/include/**",
+        "/home/apple/lidar_cam_rslidar/devel/include/**",
+        "/home/apple/lidar_cam/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/apple/lidar_cam/src/aruco_ros/aruco/include/**",
+        "/home/apple/lidar_cam/src/aruco_mapping/include/**",
+        "/home/apple/lidar_cam/src/aruco_ros/aruco_ros/include/**",
+        "/home/apple/my_ws3/src/camera_lbas/include/**",
+        "/home/apple/lidar_cam/src/euclidean_cluster/include/**",
+        "/home/apple/my_ws3/src/hikvision_ros_driver-master/include/**",
+        "/home/apple/lidar_cam/src/lidar_camera_calibration-master/include/**",
+        "/home/apple/YSW/slam/LOAM/Workplace/LIO-SAM_ws/src/LIO-SAM/include/**",
+        "/home/apple/lidar_cam/src/pcl_test/include/**",
+        "/home/apple/lidar_cam/src/pointgrey_camera_driver/pointgrey_camera_driver/include/**",
+        "/home/apple/my_ws3/src/push_h264/include/**",
+        "/home/apple/my_ws3/src/push_h264_2/include/**",
+        "/home/apple/lidar_cam/src/velodyne-melodic-devel/velodyne_driver/include/**",
+        "/home/apple/lidar_cam/src/velodyne-melodic-devel/velodyne_laserscan/include/**",
+        "/home/apple/lidar_cam/src/velodyne-melodic-devel/velodyne_pointcloud/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

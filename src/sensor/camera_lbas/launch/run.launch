@@ -1,0 +1,4 @@
+<launch>
+    <include file="$(find camera_lbas)/launch/cap_image.launch" />
+
+</launch>

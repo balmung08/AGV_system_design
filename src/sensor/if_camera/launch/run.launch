@@ -1,0 +1,16 @@
+<launch>    
+         
+    <!-- <node pkg="if_camera" name="if_cam" type="if_cam" output="screen"> -->
+
+    <node pkg="if_camera" name="read_if_cam" type="read_if_cam" output="screen">
+        <param name="display" type="int" value="0"/>
+        <param name="rect_Xcenter" type="int" value="350"/>
+        <param name="rect_Ycenter" type="int" value="180"/>
+        <param name="rect_bias" type="int" value="40"/>
+
+        <param name="rect_Xcenter2" type="int" value="60"/>
+        <param name="rect_Ycenter2" type="int" value="100"/>
+        <param name="rect_bias2" type="int" value="30"/>
+    </node>
+
+</launch>

@@ -1,0 +1,27 @@
+accordingPathdir: false
+onlyAkm: false
+
+pose0:     
+  map_x: -5.55
+  map_y: -0.8
+  heading: -91.5
+  vel: 0.2
+  caption: ""
+
+pose1:     
+  map_x: -5.55
+  map_y: 0.11
+  heading: 180
+  vel: 0.2
+  caption: "A000"
+
+pose2:     
+  map_x: -0.9
+  map_y: 0.11
+  heading: 180
+  vel: 0.2
+  caption: "A001"
+  # action0: ["act0", 20, 60, 10]
+  # action1: ["act1", 0, 0, 1] 
+
+

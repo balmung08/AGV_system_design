@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="gps_enu" type="gps_enu" name="gps_enu" output="screen">
+        <!-- 注釋後採用全局配置 -->
+        <param name="angle_bias" value="-0.34"/>
+        <param name="x_bias" value="2.95"/>
+        <param name="y_bias" value="1.45"/>
+    </node>
+    <!-- <node pkg="rviz" type="rviz" name="rviz" output="screen" args="-d $(find gps_enu)/rviz/gps.rviz"/> -->
+</launch>

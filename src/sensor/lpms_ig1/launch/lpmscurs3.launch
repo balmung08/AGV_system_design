@@ -1,0 +1,18 @@
+<launch>
+    <!-- IG1 Sensor node -->
+    <node name="lpms_curs3" pkg="lpms_ig1" type="lpms_curs3_node">
+        <param name="port" value="/dev/ttyUSB0" type="string" />
+        <param name="baudrate" value="921600" type="int" />
+        <param name="frame_id" value="imu" type="string" />
+    </node>
+
+    <!-- imudata rad to deg conversion node -->
+    <node name="imudata_deg" pkg="lpms_ig1" type="imudata_rad_to_deg_node" />
+
+    <!-- Plots -->
+    <node name="plot_imu_gyro" pkg="rqt_plot" type="rqt_plot" 
+        args="/angular_vel_deg" />
+
+    <node name="plot_imu_euler" pkg="rqt_plot" type="rqt_plot"
+        args="/rpy_deg" />
+</launch>

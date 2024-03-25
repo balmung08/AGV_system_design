@@ -1,0 +1,4 @@
+sudo gedit /etc/ld.so.conf
+找到so文件的path
+复制到里面
+sudo /sbin/ldconfig

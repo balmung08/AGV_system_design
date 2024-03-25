@@ -1,0 +1,20 @@
+<launch>
+    <!-- IG1 RS484 Sensor node -->
+    <node name="lpms_ig1_rs485" pkg="lpms_ig1" type="lpms_ig1_rs485_node">
+        <param name="port" value="/dev/ttyTHS5" type="string" />
+        <param name="baudrate" value="115200" type="int" />
+        <param name="rs485ControlPin" value="388" type="int" />
+        <param name="rs485ControlPinToggleWaitMs" value="2" type="int" />
+        <param name="frame_id" value="imu" type="string" />
+    </node>
+
+    <!-- imudata rad to deg conversion node -->
+    <node name="imudata_deg" pkg="lpms_ig1" type="imudata_rad_to_deg_node" />
+
+    <!-- Plots -->
+    <node name="plot_imu_gyro" pkg="rqt_plot" type="rqt_plot" 
+        args="/angular_vel_deg" />
+
+    <node name="plot_imu_euler" pkg="rqt_plot" type="rqt_plot"
+        args="/rpy_deg" />
+</launch>

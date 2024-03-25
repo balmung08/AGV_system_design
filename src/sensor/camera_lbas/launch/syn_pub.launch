@@ -1,0 +1,19 @@
+<launch>
+    <arg name="img_topic" value="lbas_image"/>
+    <node pkg="camera_lbas" name="camera_lbas_node" type="camera_lbas_node" output="screen">
+    	<param name="if_auto" value="false" type="bool"/>
+        <param name="exp_time" value="20000.0" type="double"/>
+        <param name="max_hz" value="30.0" type="double"/>
+        <!-- max_hz<0 means no maximum constraint for publish freq -->
+        <param name="IP" value="192.168.1.201" type="string"/> 
+        <!-- do not modify the above param except the IP of camera is really changed -->
+        <param name="pubtopic_name" value="$(arg img_topic)" type="string"/>
+        <param name="display" value="0" type="int"/>  
+    </node>
+    <include file="$(find velodyne_pointcloud)/launch/VLP16_points.launch">
+        <arg name="max_range" default="130.0" />
+        <arg name="min_range" default="0.4" />
+        <arg name="rpm" default="1200.0" />
+        <arg name="gps_time" default="false" />
+    </include>
+</launch>

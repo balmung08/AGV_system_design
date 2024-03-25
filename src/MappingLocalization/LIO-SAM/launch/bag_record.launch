@@ -1,0 +1,25 @@
+<launch>
+    <!-- *NIU: 录包时请一定确保gps的偏移值全局变量已经被设置 -->
+    <!-- <rosparam file="$(env HOME)/byc4.1_ws/config/$(env agvId).yaml" command="load"/> -->
+
+    <!-- *NIU: 启动gps_base -->
+    <!-- <include file="$(find gps)/launch/run_base.launch"/> -->
+
+    <!-- Robsense激光雷达 -->
+    <node pkg="rslidar_sdk" name="rslidar_sdk_node" type="rslidar_sdk_node" output="screen"/>
+
+    <!-- lpms IMU -->
+    <include file="$(find lpms_ig1)/launch/lpmsig1.launch"/>
+    <!-- <include file="$(find xsens_mti_driver)/launch/xsens_mti_node.launch"/> -->
+
+    <!-- rslidar 转 velodyne -->
+    <node pkg="rs_to_velodyne" type="rs_to_velodyne" name="rs_to_velodyne" args="XYZIRT XYZIRT"   output="screen">
+        <param name="cloud_topic" value="/rslidar_points"/>
+    </node>
+
+    <node pkg="rviz" name="rviz" type="rviz" output="screen"/>
+
+    <node pkg="rosbag" type="record" name="bag_record" args="/velodyne_points /imu/data -o /home/bit/.bag" output="screen"/> 
+    <!-- <node pkg="rosbag" type="record" name="bag_record" args="/velodyne_points /imudata_deg/rpy_deg /imudata_deg/angular_vel_deg /imu_correct /imu/mag /imu/is_autocalibration_active /imu/data /gps_base/GPS_fix /gps_base/GPS_Base -o /home/bit/.bag"/> -->
+                                                                                           
+</launch>

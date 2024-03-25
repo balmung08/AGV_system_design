@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="keyboard" type="keyboard" name="keyboard" output="screen"/>   
+</launch>

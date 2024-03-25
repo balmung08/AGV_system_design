@@ -1,0 +1,8 @@
+Log file created at: 2024/01/13 11:19:40
+Running on machine: wsk-virtual-machine
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0113 11:19:40.273515 170578 matching.cpp:87] load global map size:3639561
+I0113 11:19:40.649188 170578 matching.cpp:89] filtered global map size:1210725
+I0113 11:19:40.662809 170578 matching.cpp:111] new local map:-75,75,-75,75,-75,75
+
+I0113 11:19:40.662905 170578 matching.cpp:117] local map size:5477

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package>
+  <name>h264_server</name>
+  <version>0.0.0</version>
+  <description>The h264_server package</description>
+
+
+  <maintainer email="shenzb12@lzu.edu.cn">adam</maintainer>
+
+  <license>MIT</license>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <!-- <build_depend>pcl_ros</build_depend> -->
+  <!-- <build_depend>jsk_recognition_msgs</build_depend> -->
+  <!-- <build_depend>costmap_converter</build_depend> -->
+  <build_depend>std_msgs</build_depend>
+  <build_depend>opencv</build_depend> 
+  <build_depend>cv_bridge</build_depend> 
+
+
+
+  <run_depend>cv_bridge</run_depend>
+  <run_depend>opencv</run_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <!-- <run_depend>pcl_ros</run_depend> -->
+  <!-- <run_depend>jsk_recognition_msgs</run_depend> -->
+  <!-- <run_depend>costmap_converter</run_depend> -->
+  <run_depend>std_msgs</run_depend>
+</package>

@@ -1,0 +1,47 @@
+<launch>
+    <!-- <rosparam file="$(find global_plan_sim)/config1.yaml" command="load"/>    -->
+
+    <!-- <param name="/gps_base/sim_flag" value="false"/> -->
+    
+    <!-- <include file="$(find gps)/launch/run.launch"/> -->
+    
+    <include file="$(find obs_check)/launch/run.launch"/>
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="tablebase_baselink" args="0.245 0 0 0 0 0 base_link turntable_base"/>
+
+    <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="velodyne_rslidar" args="0 0 0 0 0 0 velodyne rslidar"/> -->
+
+    <node pkg="global_plan_sim" type="local_path_plan" name="local_path_plan" output="screen"/>
+
+    <node pkg="pathtrack" type="pathtrack" name="pathtrack" output="screen">
+        <param name="run_enable" value="true"/>
+        <param name="angle_offset" value="5"/>
+    </node>
+
+    <node pkg="pathtrack" type="speedlimit" name="speedlimit" output="screen"/>
+
+    <node pkg="pathtrack" type="selfturnctr" name="selfturnctr" output="screen"/>
+
+    <node pkg="workctr" type="workctr" name="workctr" output="screen"/>
+    
+    <node pkg="rviz" type="rviz" name="rviz_global_plan_sim" args="-d $(find global_plan_sim)/test.rviz" output="screen"/>
+
+    <node pkg="car_ctr" name="car_ctr" type="car_ctr" output="screen">
+        <param name="can_enable" value="false"/>
+        <param name="remote_ip" value="192.168.1.101"/> 
+    </node>  
+    
+    <include file="$(find turntable)/launch/run.launch"/>
+
+    <include file="$(find lidar_localization)/launch/matching.launch"/>
+
+    <!-- 可见光相机 -->
+    <include file="$(find camera_lbas)/launch/cap_image.launch" />
+
+    <!-- 红外相机 -->
+    <include file="$(find if_camera)/launch/run.launch"/>
+
+    <!-- <include file="$(find mqtt_comm)/launch/run_test.launch"/> -->
+
+    <!-- <node pkg="rqt_gui" type="rqt_gui" name="rqt_gui"/> -->
+</launch> 

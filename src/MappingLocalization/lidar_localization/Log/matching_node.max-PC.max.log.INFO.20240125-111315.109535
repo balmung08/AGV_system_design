@@ -1,0 +1,8 @@
+Log file created at: 2024/01/25 11:13:15
+Running on machine: max-PC
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0125 11:13:15.737815 109535 matching.cpp:87] load global map size:3639561
+I0125 11:13:16.070991 109535 matching.cpp:89] filtered global map size:1210725
+I0125 11:13:16.090327 109535 matching.cpp:111] new local map:-75,75,-75,75,-75,75
+
+I0125 11:13:16.090369 109535 matching.cpp:117] local map size:5477

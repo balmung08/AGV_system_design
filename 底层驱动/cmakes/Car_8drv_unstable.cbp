@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Car_8drv_unstable"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/wl/CLionProjects/car_8drv_Lite/cmakes"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/wl/CLionProjects/car_8drv_Lite/cmakes/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/wl/CLionProjects/car_8drv_Lite/cmakes/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/wl/CLionProjects/car_8drv_Lite/cmakes/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/wl/CLionProjects/car_8drv_Lite/cmakes/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/wl/CLionProjects/car_8drv_Lite/cmakes"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/wl/CLionProjects/car_8drv_Lite/cmakes/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/wl/CLionProjects/car_8drv_Lite/cmakes/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/wl/CLionProjects/car_8drv_Lite/cmakes/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/wl/CLionProjects/car_8drv_Lite/cmakes/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Car_8drv_unstable">
+				<Option output="/home/wl/CLionProjects/car_8drv_Lite/cmakes/Car_8drv_unstable" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wl/CLionProjects/car_8drv_Lite/cmakes"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/wl/MyCompiler/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/4.9.4/../../../../arm-linux-gnueabihf/include/c++/4.9.4"/>
+					<Add directory="/home/wl/MyCompiler/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/4.9.4/../../../../arm-linux-gnueabihf/include/c++/4.9.4/arm-linux-gnueabihf/."/>
+					<Add directory="/home/wl/MyCompiler/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/4.9.4/../../../../arm-linux-gnueabihf/include/c++/4.9.4/backward"/>
+					<Add directory="/home/wl/MyCompiler/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/4.9.4/include"/>
+					<Add directory="/home/wl/MyCompiler/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/4.9.4/include-fixed"/>
+					<Add directory="/home/wl/MyCompiler/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/4.9.4/../../../../arm-linux-gnueabihf/include"/>
+					<Add directory="/home/wl/MyCompiler/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/../arm-linux-gnueabihf/libc/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/wl/CLionProjects/car_8drv_Lite/cmakes/Makefile&quot;  VERBOSE=1 Car_8drv_unstable"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/wl/CLionProjects/car_8drv_Lite/cmakes/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/wl/CLionProjects/car_8drv_Lite/cmakes/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/wl/CLionProjects/car_8drv_Lite/cmakes/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Car_8drv_unstable/fast">
+				<Option output="/home/wl/CLionProjects/car_8drv_Lite/cmakes/Car_8drv_unstable" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wl/CLionProjects/car_8drv_Lite/cmakes"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/wl/MyCompiler/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/4.9.4/../../../../arm-linux-gnueabihf/include/c++/4.9.4"/>
+					<Add directory="/home/wl/MyCompiler/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/4.9.4/../../../../arm-linux-gnueabihf/include/c++/4.9.4/arm-linux-gnueabihf/."/>
+					<Add directory="/home/wl/MyCompiler/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/4.9.4/../../../../arm-linux-gnueabihf/include/c++/4.9.4/backward"/>
+					<Add directory="/home/wl/MyCompiler/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/4.9.4/include"/>
+					<Add directory="/home/wl/MyCompiler/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/4.9.4/include-fixed"/>
+					<Add directory="/home/wl/MyCompiler/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/4.9.4/../../../../arm-linux-gnueabihf/include"/>
+					<Add directory="/home/wl/MyCompiler/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/../arm-linux-gnueabihf/libc/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/wl/CLionProjects/car_8drv_Lite/cmakes/Makefile&quot;  VERBOSE=1 Car_8drv_unstable/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/wl/CLionProjects/car_8drv_Lite/cmakes/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/wl/CLionProjects/car_8drv_Lite/cmakes/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/wl/CLionProjects/car_8drv_Lite/cmakes/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/wl/CLionProjects/car_8drv_Lite/cmakes"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/wl/CLionProjects/car_8drv_Lite/cmakes/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/wl/CLionProjects/car_8drv_Lite/cmakes/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/wl/CLionProjects/car_8drv_Lite/cmakes/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/wl/CLionProjects/car_8drv_Lite/cmakes/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/wl/CLionProjects/car_8drv_Lite/Array.cc">
+			<Option target="Car_8drv_unstable"/>
+		</Unit>
+		<Unit filename="/home/wl/CLionProjects/car_8drv_Lite/Array.hh">
+			<Option target="Car_8drv_unstable"/>
+		</Unit>
+		<Unit filename="/home/wl/CLionProjects/car_8drv_Lite/Axis.cpp">
+			<Option target="Car_8drv_unstable"/>
+		</Unit>
+		<Unit filename="/home/wl/CLionProjects/car_8drv_Lite/Axis.h">
+			<Option target="Car_8drv_unstable"/>
+		</Unit>
+		<Unit filename="/home/wl/CLionProjects/car_8drv_Lite/BITCar.cpp">
+			<Option target="Car_8drv_unstable"/>
+		</Unit>
+		<Unit filename="/home/wl/CLionProjects/car_8drv_Lite/BITCar.h">
+			<Option target="Car_8drv_unstable"/>
+		</Unit>
+		<Unit filename="/home/wl/CLionProjects/car_8drv_Lite/GPS.cpp">
+			<Option target="Car_8drv_unstable"/>
+		</Unit>
+		<Unit filename="/home/wl/CLionProjects/car_8drv_Lite/GPS.h">
+			<Option target="Car_8drv_unstable"/>
+		</Unit>
+		<Unit filename="/home/wl/CLionProjects/car_8drv_Lite/QuadProg++.cc">
+			<Option target="Car_8drv_unstable"/>
+		</Unit>
+		<Unit filename="/home/wl/CLionProjects/car_8drv_Lite/QuadProg++.hh">
+			<Option target="Car_8drv_unstable"/>
+		</Unit>
+		<Unit filename="/home/wl/CLionProjects/car_8drv_Lite/Serial.cpp">
+			<Option target="Car_8drv_unstable"/>
+		</Unit>
+		<Unit filename="/home/wl/CLionProjects/car_8drv_Lite/Serial.h">
+			<Option target="Car_8drv_unstable"/>
+		</Unit>
+		<Unit filename="/home/wl/CLionProjects/car_8drv_Lite/can.cpp">
+			<Option target="Car_8drv_unstable"/>
+		</Unit>
+		<Unit filename="/home/wl/CLionProjects/car_8drv_Lite/can.h">
+			<Option target="Car_8drv_unstable"/>
+		</Unit>
+		<Unit filename="/home/wl/CLionProjects/car_8drv_Lite/command.cpp">
+			<Option target="Car_8drv_unstable"/>
+		</Unit>
+		<Unit filename="/home/wl/CLionProjects/car_8drv_Lite/command.h">
+			<Option target="Car_8drv_unstable"/>
+		</Unit>
+		<Unit filename="/home/wl/CLionProjects/car_8drv_Lite/inic.cpp">
+			<Option target="Car_8drv_unstable"/>
+		</Unit>
+		<Unit filename="/home/wl/CLionProjects/car_8drv_Lite/inic.h">
+			<Option target="Car_8drv_unstable"/>
+		</Unit>
+		<Unit filename="/home/wl/CLionProjects/car_8drv_Lite/main.cpp">
+			<Option target="Car_8drv_unstable"/>
+		</Unit>
+		<Unit filename="/home/wl/CLionProjects/car_8drv_Lite/motordrv.cpp">
+			<Option target="Car_8drv_unstable"/>
+		</Unit>
+		<Unit filename="/home/wl/CLionProjects/car_8drv_Lite/motordrv.h">
+			<Option target="Car_8drv_unstable"/>
+		</Unit>
+		<Unit filename="/home/wl/CLionProjects/car_8drv_Lite/myudp.cpp">
+			<Option target="Car_8drv_unstable"/>
+		</Unit>
+		<Unit filename="/home/wl/CLionProjects/car_8drv_Lite/myudp.h">
+			<Option target="Car_8drv_unstable"/>
+		</Unit>
+		<Unit filename="/home/wl/CLionProjects/car_8drv_Lite/public.cpp">
+			<Option target="Car_8drv_unstable"/>
+		</Unit>
+		<Unit filename="/home/wl/CLionProjects/car_8drv_Lite/public.h">
+			<Option target="Car_8drv_unstable"/>
+		</Unit>
+		<Unit filename="/home/wl/CLionProjects/car_8drv_Lite/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

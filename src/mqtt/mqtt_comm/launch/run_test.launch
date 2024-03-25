@@ -1,0 +1,12 @@
+ <launch>
+    <!-- 必须先定义agvId -->
+
+    <node name="mqtt_bridge" pkg="mqtt_bridge" type="mqtt_bridge_node.py" respawn="true" output="screen">
+        <rosparam command="load" file="$(find mqtt_comm)/config/params.yaml" />
+    </node>
+
+    <node pkg="mqtt_comm" type="mqtt_comm" name="mqtt_comm" respawn="true" output="screen"/>
+
+    <!-- <node pkg="rviz" type="rviz" name="rviz" args="-d $(find mqtt_comm)/show.rviz" output="screen"/> -->
+
+ </launch>

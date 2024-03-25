@@ -1,0 +1,13 @@
+GCBase_gcc421_v3_0
+GenApi_gcc421_v3_0
+Log_gcc421_v3_0
+MVGigEVisionSDK
+MVRender
+MathParser_gcc421_v3_0
+MediaProcess
+MvCameraControl
+MvCameraControl
+MvUsb3vTL
+NodeMapData_gcc421_v3_0
+XmlParser_gcc421_v3_0
+log4cpp_gcc421_v3_0

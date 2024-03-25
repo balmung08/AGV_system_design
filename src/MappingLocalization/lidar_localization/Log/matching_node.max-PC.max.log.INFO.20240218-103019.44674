@@ -1,0 +1,4 @@
+Log file created at: 2024/02/18 10:30:19
+Running on machine: max-PC
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0218 10:30:19.902346 44674 matching.cpp:87] load global map size:3639561

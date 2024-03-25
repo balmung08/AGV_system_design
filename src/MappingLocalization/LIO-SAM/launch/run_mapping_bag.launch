@@ -1,0 +1,15 @@
+<launch>
+    <!-- *NIU: 标定请置true -->
+    <param name="iscal" value="true"/>
+
+    <!--- Run GPS ENU *NIU: 请使用录制时所用激光雷达的标定值-->
+    <include file="$(find gps_enu)/launch/gps_enu_14_fl.launch"/>
+
+    <!-- lio_sam -->
+    <include file="$(find lio_sam)/launch/lio_sam.launch" />
+
+    <!--- Run Rviz-->
+    <include file="$(find lio_sam)/launch/include/module_rviz.launch" />
+
+    <include file="$(find lio_sam)/launch/bag_play.launch" />
+</launch>

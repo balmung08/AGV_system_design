@@ -1,0 +1,5 @@
+Log file created at: 2024/03/12 11:19:47
+Running on machine: bit-Nuvo-7531-Series
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20240312 11:19:47.861333 283240 matching.cpp:87] load global map size:31299

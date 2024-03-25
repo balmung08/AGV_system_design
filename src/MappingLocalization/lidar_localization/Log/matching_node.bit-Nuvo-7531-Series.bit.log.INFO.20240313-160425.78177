@@ -1,0 +1,12 @@
+Log file created at: 2024/03/13 16:04:25
+Running on machine: bit-Nuvo-7531-Series
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20240313 16:04:25.440266 78177 matching.cpp:87] load global map size:31299
+I20240313 16:04:25.449193 78177 matching.cpp:89] filtered global map size:2616
+I20240313 16:04:25.454638 78177 matching.cpp:111] new local map:-75,75,-75,75,-75,75
+
+I20240313 16:04:25.454792 78177 matching.cpp:117] local map size:2476
+I20240313 16:04:26.117761 78177 matching.cpp:111] new local map:-77.1808,72.8192,-74.9189,75.0811,-74.8595,75.1405
+
+I20240313 16:04:26.117914 78177 matching.cpp:117] local map size:2476

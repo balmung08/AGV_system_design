@@ -1,0 +1,66 @@
+<launch>   
+    <!-- <param name="agvId" value="$(env agvId)"/>
+    <param name="version" value="V20230105_FINAL"/> -->
+    <!-- 新加四周线激光雷达代码 --> 
+    <!-- <arg name="sim_flag" value="true"/> -->
+    
+    <!-- <rosparam file="$(env HOME)/byc3.2_ws/config/$(env agvId).yaml" command="load"/> -->
+
+    <!-- <rosparam if="$(arg sim_flag)" file="$(env HOME)/byc3.3_ws/config/$(env agvId).yaml" command="load"/> -->
+    <!-- <rosparam unless="$(arg sim_flag)" file="$(env HOME)/byc3.3_ws/config/$(env agvId).yaml" command="load"/> -->
+
+    <include file="$(find test_comm)/launch/run.launch"/>
+    <!-- 数据通讯部分 -->
+    <!-- iot与调度软件通讯 -->
+    <include file="$(find mqtt_comm)/launch/run_iot.launch"/>
+
+    <!-- can与车底盘PLC通讯 -->
+    <!-- <node pkg="data_comm" name="can_comm" type="can_comm"/> -->
+    <include file="$(find data_comm)/launch/run.launch"/>
+
+    <!-- 规划与控制部分-->
+    <!-- 局部路径规划 -->
+    <node pkg="global_plan_sim" type="local_path_plan" name="local_path_plan" output="screen"/>
+    
+    <!-- 路径跟踪控制 -->
+    <node pkg="pathtrack" type="pathtrack" name="pathtrack" output="screen">
+        <param name="pub_enable" value="false"/>
+        <param name="iterative_ctr_enable" value="true"/>
+        <param name="run_enable" value="true"/>
+        <param name="obs_stop_enable" value="true"/>
+        <param name="test_speed" value="0.0"/>
+        <param name="turn_speed_max" value="0.3"/>       
+    </node>
+    
+    <!-- 夹爪作业控制 -->
+    <node pkg="pawcontrol" type="pawcontrol" name="pawcontrol" output="screen">
+        <param name="wheel_stop_distance" value="0.06" /> 
+    </node>
+
+    <!-- 环境感知部分 -->
+    <!-- 线激光雷达的定位纠偏 -->
+    <include file="$(find laserscan_check)/launch/run.launch"/>
+    <!-- 32线激光雷达的定位纠偏 -->
+    <include file="$(find around_lidar)/launch/run.launch"/>
+    <!-- 定位-激光里程计 -->
+    <include file="$(find lidar_localization)/launch/bagmode/matching_bagmode.launch"/>
+
+
+    <!-- 传感器采集部分 -->
+
+    <!-- GPS接收机 -->
+    <!-- <param name="/gps_base/sim_flag" value="false"/>
+    <include file="$(find gps)/launch/run_bagmode.launch"/> -->
+
+    <!-- 车辆标签识别 -->
+    <node pkg="rfid_reader" type="rfid_reader_tcp" name="rfid_reader_tcp" output="screen"/> 
+    <!-- IMU姿态传感器 -->
+    <!-- <include file="$(find lpms_ig1)/launch/lpmsig1.launch"/> -->
+    <!-- 毫米波雷达 -->
+    <!-- <include file="$(find radar)/launch/run.launch"/> -->
+    <!-- CCD相机+推流RTSP -->
+    <!-- <include file="$(find camera_lbas)/launch/cap_image.launch"/> -->
+    <!-- <include file="$(find h264_server)/launch/run.launch"/> -->        
+    <node pkg="rviz" type="rviz" name="rviz_global_plan_sim" args="-d $(find global_plan_sim)/show.rviz" output="screen" respawn="true" respawn_delay="2"/>
+    <node pkg="rqt_console" type="rqt_console" name="rqt_console"/>
+</launch> 

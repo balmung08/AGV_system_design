@@ -1,0 +1,35 @@
+map_path: /home/bit/Downloads/LOAM/GlobalMap.pcd
+registration_method: NDT
+frame_filter: voxel_filter
+box_filter_size: [-75.0, 75.0, -75.0, 75.0, -75.0, 75.0]
+local_map_filter: voxel_filter
+global_map_filter: voxel_filter
+NDT:
+  res: 1.0
+  step_size: 0.1
+  trans_eps: 0.01
+  max_iter: 30
+voxel_filter:
+  global_map:
+    leaf_size: [0.5, 0.5, 0.5]
+  local_map:
+    leaf_size: [0.3, 0.3, 0.3]
+  frame:
+    leaf_size: [0.4, 0.4, 0.4]
+polygons:
+  range1:
+    p1: [760, -200]
+    p2: [620, 500]
+    p3: [-596, 165]
+    p4: [-593, -2703]
+needFixInitial: true
+InitialPose:
+  - [-0.9859024, -0.1642658, 0.0318316, -2.081529]
+  - [0.164364, -0.9863996, 0.0004736371, 0.03814663]
+  - [0.03132087, 0.005698927, 0.9994931, 0.1366295]
+  - [0, 0, 0, 1]
+unitPose:
+  - [1, 0, 0, 0]
+  - [0, 1, 0, 0]
+  - [0, 0, 1, 0]
+  - [0, 0, 0, 1]

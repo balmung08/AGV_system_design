@@ -1,0 +1,11 @@
+ <launch>
+    <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="base_side" args="0 -1.375 0 0 0 0 base_link_side base_link"/> -->
+    <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="base_side" args="0.57 0 0 0 0 0 base_link_gps base_link"/> -->
+
+    <node pkg="keyboard" type="keyboard" name="keyboard" output="screen"/> 
+    <!-- <include file="$(find teleop_twist_joy)/launch/teleop.launch"/> -->
+    
+    <node pkg="gps" type="gps_pro" name="gps_pro">
+        <param name="saveflag" value="false"/>
+    </node>
+ </launch>

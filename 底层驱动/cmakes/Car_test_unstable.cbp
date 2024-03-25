@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Car_test_unstable"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/cmakes"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/cmakes/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/cmakes/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/cmakes/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/cmakes/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/cmakes"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/cmakes/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/cmakes/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/cmakes/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/cmakes/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Car_test_unstable">
+				<Option output="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/cmakes/Car_test_unstable" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/cmakes"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/lhz/Softeware/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/4.9.4/../../../../arm-linux-gnueabihf/include/c++/4.9.4"/>
+					<Add directory="/home/lhz/Softeware/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/4.9.4/../../../../arm-linux-gnueabihf/include/c++/4.9.4/arm-linux-gnueabihf/."/>
+					<Add directory="/home/lhz/Softeware/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/4.9.4/../../../../arm-linux-gnueabihf/include/c++/4.9.4/backward"/>
+					<Add directory="/home/lhz/Softeware/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/4.9.4/include"/>
+					<Add directory="/home/lhz/Softeware/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/4.9.4/include-fixed"/>
+					<Add directory="/home/lhz/Softeware/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/4.9.4/../../../../arm-linux-gnueabihf/include"/>
+					<Add directory="/home/lhz/Softeware/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/../arm-linux-gnueabihf/libc/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/cmakes/Makefile&quot;  VERBOSE=1 Car_test_unstable"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/cmakes/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/cmakes/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/cmakes/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Car_test_unstable/fast">
+				<Option output="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/cmakes/Car_test_unstable" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/cmakes"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/lhz/Softeware/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/4.9.4/../../../../arm-linux-gnueabihf/include/c++/4.9.4"/>
+					<Add directory="/home/lhz/Softeware/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/4.9.4/../../../../arm-linux-gnueabihf/include/c++/4.9.4/arm-linux-gnueabihf/."/>
+					<Add directory="/home/lhz/Softeware/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/4.9.4/../../../../arm-linux-gnueabihf/include/c++/4.9.4/backward"/>
+					<Add directory="/home/lhz/Softeware/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/4.9.4/include"/>
+					<Add directory="/home/lhz/Softeware/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/4.9.4/include-fixed"/>
+					<Add directory="/home/lhz/Softeware/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/4.9.4/../../../../arm-linux-gnueabihf/include"/>
+					<Add directory="/home/lhz/Softeware/gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf/bin/../arm-linux-gnueabihf/libc/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/cmakes/Makefile&quot;  VERBOSE=1 Car_test_unstable/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/cmakes/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/cmakes/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/cmakes/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/cmakes"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/cmakes/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/cmakes/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/cmakes/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/cmakes/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/Array.cc">
+			<Option target="Car_test_unstable"/>
+		</Unit>
+		<Unit filename="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/Array.hh">
+			<Option target="Car_test_unstable"/>
+		</Unit>
+		<Unit filename="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/Axis.cpp">
+			<Option target="Car_test_unstable"/>
+		</Unit>
+		<Unit filename="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/Axis.h">
+			<Option target="Car_test_unstable"/>
+		</Unit>
+		<Unit filename="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/BITCar.cpp">
+			<Option target="Car_test_unstable"/>
+		</Unit>
+		<Unit filename="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/BITCar.h">
+			<Option target="Car_test_unstable"/>
+		</Unit>
+		<Unit filename="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/GPS.cpp">
+			<Option target="Car_test_unstable"/>
+		</Unit>
+		<Unit filename="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/GPS.h">
+			<Option target="Car_test_unstable"/>
+		</Unit>
+		<Unit filename="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/QuadProg++.cc">
+			<Option target="Car_test_unstable"/>
+		</Unit>
+		<Unit filename="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/QuadProg++.hh">
+			<Option target="Car_test_unstable"/>
+		</Unit>
+		<Unit filename="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/Serial.cpp">
+			<Option target="Car_test_unstable"/>
+		</Unit>
+		<Unit filename="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/Serial.h">
+			<Option target="Car_test_unstable"/>
+		</Unit>
+		<Unit filename="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/can.cpp">
+			<Option target="Car_test_unstable"/>
+		</Unit>
+		<Unit filename="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/can.h">
+			<Option target="Car_test_unstable"/>
+		</Unit>
+		<Unit filename="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/command.cpp">
+			<Option target="Car_test_unstable"/>
+		</Unit>
+		<Unit filename="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/command.h">
+			<Option target="Car_test_unstable"/>
+		</Unit>
+		<Unit filename="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/inic.cpp">
+			<Option target="Car_test_unstable"/>
+		</Unit>
+		<Unit filename="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/inic.h">
+			<Option target="Car_test_unstable"/>
+		</Unit>
+		<Unit filename="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/main.cpp">
+			<Option target="Car_test_unstable"/>
+		</Unit>
+		<Unit filename="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/motordrv.cpp">
+			<Option target="Car_test_unstable"/>
+		</Unit>
+		<Unit filename="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/motordrv.h">
+			<Option target="Car_test_unstable"/>
+		</Unit>
+		<Unit filename="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/public.cpp">
+			<Option target="Car_test_unstable"/>
+		</Unit>
+		<Unit filename="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/public.h">
+			<Option target="Car_test_unstable"/>
+		</Unit>
+		<Unit filename="/home/lhz/Program/4WIS_tall_blue_car/car_8drv_202211xx/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

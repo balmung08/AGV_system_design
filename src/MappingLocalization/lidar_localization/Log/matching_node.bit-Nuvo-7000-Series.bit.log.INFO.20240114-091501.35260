@@ -1,0 +1,4 @@
+Log file created at: 2024/01/14 09:15:01
+Running on machine: bit-Nuvo-7000-Series
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0114 09:15:01.296041 35260 matching.cpp:87] load global map size:0

@@ -1,0 +1,14 @@
+<launch>
+    <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="map_turntable" args="1.35 -0.1 2.5 0.005 0 0 base_link turntable_base"/> --> -->
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="map_turntable" args="1.33 -0.0 2.5 0.01 0 0 base_link turntable_base"/> -->
+    <include file="$(find turntable)/launch/run.launch"/>
+
+    <!-- <include file="$(find camera_lbas)/launch/run.launch"/> -->
+    <!-- <include file="$(find infrared_camera)/launch/infrared_camera.launch"/> -->
+    <include file="$(find radar)/launch/run.launch"/>
+    <node pkg="rslidar_sdk" name="rslidar_sdk_node" type="rslidar_sdk_node"/> 
+
+    <!-- <node name="turntable_rviz" pkg="rviz" type="rviz" output="screen" args="-d $(find turntable)/allshow.rviz"/> -->
+
+</launch>

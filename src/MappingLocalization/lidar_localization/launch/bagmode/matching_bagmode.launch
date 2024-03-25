@@ -1,0 +1,13 @@
+<launch>
+    <!-- 仅启动gps_pro -->
+    <include file="$(find gps)/launch/run_bagmode.launch"/>
+
+    <!-- gps转ENU坐标 *NIU: 请使用定位所用的激光雷达对应的标定值 -->
+    <include file="$(find gps_enu)/launch/gps_enu_14.launch"/>
+
+    <!-- NDT定位 -->
+    <node pkg="lidar_localization"  type="matching_node"  name="matching_node"  output="screen"/>
+
+    <!-- 可视化 -->
+    <node pkg="rviz"  type="rviz"  name="rviz_lidar_localization"  args="-d $(find lidar_localization)/rviz/mapping.rviz"/>
+</launch>

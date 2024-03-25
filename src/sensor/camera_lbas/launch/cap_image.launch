@@ -1,0 +1,26 @@
+<launch>
+    <arg name="img_topic" default="lbas_image"/>
+    <node pkg="camera_lbas" name="cap_image1" type="cap_image" output="screen">
+    	<param name="if_auto" value="false" type="bool"/>
+        <param name="if_resize" value="false" type="bool"/>
+        <param name="push_flag" value="false" type="bool"/>
+        <param name="exp_time" value="10000.0" type="double"/>
+        <param name="ip" value="192.168.4.201" type="string"/> 
+        <param name="pubtopic_name" value="$(arg img_topic)" type="string"/>
+        <param name="display" value="0" type="int"/>  
+        <param name="img_width" value="1280" type="int"/>  
+        <param name="img_height" value="1024" type="int"/> 
+    </node>
+
+    <!-- <node pkg="camera_lbas" name="cap_image2" type="cap_image" output="screen">
+    	<param name="if_auto" value="true" type="bool"/>
+        <param name="if_resize" value="false" type="bool"/>
+        <param name="push_flag" value="false" type="bool"/>
+        <param name="exp_time" value="2000.0" type="double"/>
+        <param name="ip" value="192.168.4.202" type="string"/> 
+        <param name="pubtopic_name" value="$(arg img_topic)" type="string"/>
+        <param name="display" value="1" type="int"/>  
+        <param name="img_width" value="1280" type="int"/>  
+        <param name="img_height" value="1024" type="int"/> 
+    </node> -->
+</launch>

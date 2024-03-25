@@ -1,0 +1,10 @@
+<launch>
+
+<node pkg="car_ctr" name="car_ctr" type="car_ctr" output="screen">
+    <param name="can_enable" value="false"/>
+    <param name="remote_ip" value="192.168.1.101"/> 
+</node>
+
+<!-- <node pkg="rqt_gui" type="rqt_gui" name="rqt_gui"/> -->
+
+</launch>

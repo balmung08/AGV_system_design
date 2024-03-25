@@ -1,0 +1,22 @@
+<launch>
+    <!-- <node pkg="rosbag" type="play" name="player" output="screen" args="-clock /home/wsk/byc4.0_ws/bags/14Forward1.bag"/> -->
+
+    <param name="/gps_base/sim_flag" value="false"/>
+    <include file="$(find gps)/launch/run.launch"/>
+    
+    <!-- NDT定位 -->
+    <node pkg="lidar_localization"  type="matching_node"  name="matching_node"/>
+
+    <!-- gps转ENU坐标 -->
+    <include file="$(find gps_enu)/launch/gps_enu_blue.launch"/>
+
+    <!-- rslidar 转 velodyne -->
+    <include file="$(find rs_to_velodyne)/launch/run.launch"/>
+    
+    <!-- 可视化 -->
+    <node pkg="rviz"  type="rviz"  name="rviz_matching"  args="-d $(find lidar_localization)/rviz/mapping.rviz"/>
+
+    <!-- Robsense激光雷达 -->
+    <node pkg="rslidar_sdk" name="rslidar_sdk_node" type="rslidar_sdk_node" output="screen"/>
+
+</launch>

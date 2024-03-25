@@ -1,0 +1,25 @@
+<launch>    
+    <node pkg="turntable" type="turntable" name="turntable" output="screen">
+        <param name="can_ch" value="0"/>
+        <param name="pitch_canid" value="6"/>
+        <param name="azimuth_canid" value="5"/>
+
+        <param name="pitch_enable" value="true"/>
+        <param name="azimuth_enable" value="true"/>
+        <param name="show_cnt" value="false"/>
+
+        <param name="pitch_zero" value="332782"/>
+        <param name="azimuth_zero" value="289817"/> 
+
+        <!-- <param name="udp_local_port" value="1118"/>
+        <param name="udp_remote_port" value="1117"/>
+        <param name="udp_remote_ip" value="192.168.3.108"/> -->
+    </node>
+
+    <!-- <include file="$(find msensor)/launch/run.launch"/> -->
+
+    <!-- <node pkg="rslidar_sdk" name="rslidar_sdk_node" type="rslidar_sdk_node"/>  -->
+    
+    <!-- <node pkg="rqt_gui" type="rqt_gui" name="rqt_gui"/> -->
+    <!-- <node pkg="rviz" type="rviz" name="rviz" args="-d $(find turntable)/show.rviz"/> -->
+</launch> 

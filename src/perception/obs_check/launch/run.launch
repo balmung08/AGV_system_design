@@ -1,0 +1,28 @@
+<launch> 
+    <!-- <include file="$(find rslidar_sdk)/launch/start.launch"/> -->
+
+    <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="base_rslidar" args="0.67 0 0 0 0 0 base_link turntable_base"/> -->
+    
+    <node pkg="obs_check" name="cloud_tf" type="cloud_tf" output="screen"/>
+
+    <node pkg="obs_check" name="cloud_segmentation" type="cloud_segmentation" output="screen"/>
+
+    <node pkg="obs_check" name="cloud_calculation_left" type="cloud_calculation" output="screen">
+        <param name="dir" value="left"/>
+    </node>
+
+   <node pkg="obs_check" name="cloud_calculation_right" type="cloud_calculation" output="screen">
+        <param name="dir" value="right"/>
+    </node>
+
+    <node pkg="obs_check" name="cloud_calculation_front" type="cloud_calculation" output="screen">
+        <param name="dir" value="front"/>
+    </node>
+        
+    <node pkg="obs_check" name="cloud_calculation_back" type="cloud_calculation" output="screen">
+        <param name="dir" value="back"/>
+    </node>
+
+    <!-- <node pkg="rqt_gui" name="rqt_gui" type="rqt_gui" output="screen"/> -->
+    
+</launch> 

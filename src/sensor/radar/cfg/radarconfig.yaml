@@ -1,0 +1,7 @@
+radar: 
+ ROI_longth: 5.3
+ ROI_width: 2
+ buffer_time: 2
+ back_ROI_longth: 6
+ back_ROI_width: 3
+ back_buffer_time: 2

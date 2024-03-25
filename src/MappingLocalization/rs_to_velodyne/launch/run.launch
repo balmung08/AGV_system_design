@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="rs_to_velodyne" name="rs_to_velodyne" type="rs_to_velodyne" args="XYZIRT XYZIRT" output="screen">
+        <param name="cloud_topic" value="/rslidar_points"/>
+    </node>
+</launch>

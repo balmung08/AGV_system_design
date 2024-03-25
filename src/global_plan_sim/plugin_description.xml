@@ -1,0 +1,9 @@
+<library path="lib/libglobal_plan_sim_gui">
+    <class name="rviz_gui/Panel_Global_Plan_Sim"
+           type="rviz_gui::Panel_Global_Plan_Sim"
+           base_class_type="rviz::Panel">
+        <description>
+            A panel widget allowing simple diff-drive style robot base control.
+        </description>
+    </class>
+</library>
